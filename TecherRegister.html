@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" integrity="sha512-fRVSQp1g2M/EqDBL+UFSams+aw2qk12Pl/REApotuUVK1qEXERk3nrCFChouag/PdDsPk387HJuetJ1HBx8qAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>TecherRegister</title>
+</head>
+<body>
+   <nav class="shadow-sm  mb-5 bg-white rounded">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-brands fa-nfc-symbol"></i>
+                <p><span>Con</span>nect</p>
+            </div>
+            <i class="fa-solid fa-bars bar"></i>
+            <ul>
+                <li ><a href="home.html">الرئيسي</a></li>
+                <li><a href="find.html">الخبراء</a></li>
+                <li class="active"><a href="TecherRegister.html"> كخبير</a></li>
+                <li><a href="BookSeisson.html">  موعد</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class=".container content register" >
+        <form action="" class="needs-validation" novalidate >
+            <h2>التسجيل كخبير</h2>
+            <div class="row">
+                <div class="mb-3 col">
+                        <label for="Number" class="form-label">رقم الهاتف</label>
+                        <input type="number" class="form-control" placeholder="09x-xxx-xxxx" id="Number" required>
+                        <div class="invalid-feedback">
+                        ادخل رقم الهاتف
+                    </div>
+                </div>
+                <div class="mb-3 col">
+                    <label for="name" class="form-label">الاسم</label>
+                    <input type="text" class="form-control" placeholder="ادخل اسمك." id="name" required>
+                    <div class="invalid-feedback">
+                        ادخل اسمك.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col">
+                    <label for="Email" class="form-label">البريد الاكتروني</label>
+                    <input type="email" class="form-control" id="Email" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">
+                        ادخل البريد الاكتروني.
+                        </div>
+                </div>
+                <div class="mb-3 col">
+                        <label for="Qualifications" class="form-label">الفئه</label>
+                        <input type="text" class="form-control" placeholder="ادخل الفئه ان كنت مهندس او معلم لو طبيب." id="Qualifications" required>
+                        <div class="invalid-feedback">
+                       ادخل الفئه ان كنت مهندس او معلم لو طبيب.
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col">
+                        <label for="Subjects" class="form-label">التخصص</label>
+                        <input type="text" class="form-control" placeholder="التخصص" id="Subjects">
+                </div>
+                <div class="mb-3 col">
+                        <label for="Experience" class="form-label">سنوات الخبره</label>
+                        <input type="text" class="form-control" placeholder="سنوات الخبرة" id="Experience">
+                </div>
+            </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">نبذة عن نفسك</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="اكتب نبذة مختحرة عن نفسك"></textarea>
+        </div>
+        <div>
+            <label for="formFileLg" class="form-label">مرفقات</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+        </div>
+        <div class="col-12 mt-3 btt">
+            <button type="submit" class="btn btn-primary">سجل</button>
+        </div>
+        </form>
+    </div>
+    <div class="footer">    
+        <p>@2025 EduConnect. All rights reserved.</p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

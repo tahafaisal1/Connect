@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Techers</title>
+</head>
+<body>
+    <nav class="shadow-sm  mb-5 bg-white rounded">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-brands fa-nfc-symbol"></i>
+                <p><span>Con</span>nect</p>
+            </div>
+            <i class="fa-solid fa-bars bar"></i>
+            <ul>
+                <li ><a href="home.html">الرئيسي</a></li>
+                <li class="active"><a href="find.html">الخبراء</a></li>
+                <li ><a href="TecherRegister.html"> كخبير</a></li>
+                <li><a href="BookSeisson.html">موعد</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class=" page pt-5">
+        <div class="filter container row">
+            <h2></h2>
+                <div class="col-12">
+                    <label for="Category" class="form-label">Category</label>
+                    <select id="Category" class="form-select" >
+                    <option >All</option>
+                    <option data-Category="Techers">Techers</option>
+                    <option  data-Category="Engineer">Engineer</option>
+                    <option data-Category="doctor">doctor</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label for="Specialty" class="form-label">Specialty</label>
+                    <select id="Specialty" class="form-select"  >
+                    <option >All</option>
+                    <option data-Category="Techers" data-Specialty="math Teacher">math Teacher</option>
+                    <option data-Category="Techers" data-Specialty="Science Techer">Science Techer</option>
+                    <option  data-Category="Engineer" data-Specialty="structural engineer">structural engineer</option>
+                    <option  data-Category="Engineer" data-Specialty="Civil engineer"> Civil engineer</option>
+                    <option data-Category="doctor" data-Specialty="surgeon">surgeon</option>
+                    <option data-Category="doctor" data-Specialty="Neurologist"> Neurologist</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                        <label for="Names" class="form-label">Names</label>
+                        <select id="Names" class="form-select">
+                        <option >All</option>
+                        <option data-Category="Techers" data-Specialty="math Teacher" data-pname="Sarah Chen">Sarah Chen</option>
+                        <option data-Category="Techers" data-Specialty="Science Techer" data-pname="David Lee">David Lee</option>
+                        <option data-Category="Engineer" data-Specialty="structural engineer" data-pname="Alex Morgan">Alex Morga</option>
+                        <option data-Category="Engineer" data-Specialty="Civil engineer" data-pname="Maria Lopez">Maria Lopezr</option>
+                        <option data-Category="doctor" data-Specialty="surgeon" data-pname="Emily Carter">Emily Carter</option>
+                        <option data-Category="doctor" data-Specialty="Neurologist" data-pname="James Wilson">James Wilson</option>
+                        </select>
+                    </div>
+            </div>
+        <div class="container content find">
+            <div class="context">
+                <h2>بحث عن خبيرك المثالي</h2>
+                <div class="search">
+                    <i class="fa-brands fa-searchengin"></i>
+                    <input type="text" placeholder="Search by Subject avilabelity or price">
+                </div>
+            </div>
+            <div class="cards">
+            <div class="card shadow-sm" data-Category="Techers" data-Specialty="math Teacher" data-pname="Sarah Chen" data-filter="">
+                <div class="img">
+                    
+                </div>
+                <div class="text">
+                    <p class="name"> سارة تشين</p>
+                    <p class="profison"> مدرسة رياضيات</p>
+                    <p class="description"> مدرسة رياضيات متخصصة في الجبر والتفاضل والتكامل مع خبرة طويلة</p>
+                    <button type="button" class="btn btn-primary"><a href="BookSeisson.html">حجز </a>  </button>
+                    <button type="button" class="btn btn-primary moreinfo" data-name="Sarah Chen"><a href="#">المزيد </a>  </button>
+                </div>
+            </div>
+            <div class="card shadow-sm" data-Category="Techers" data-Specialty="Science Techer" data-pname="David Lee" data-filter="">
+                <div class="img">
+                    
+                </div>
+                <div class="text">
+                    <p class="name"> ديفيد لي </p>
+                    <p class="profison"> مدرس علوم </p>
+                    <p class="description"> متخصص في تدريس مواد الأحياء والكيمياء بمقاربة تفاعلية.</p>
+                    <button type="button" class="btn btn-primary"> <a href="BookSeisson.html">حجز</a> </button>
+                    <button type="button" class="btn btn-primary moreinfo" data-name="David Lee"><a href="#">المزيد</a>  </button>
+                </div>
+            </div>
+            <div class="card shadow-sm" data-Category="Engineer" data-Specialty="structural engineer" data-pname="Alex Morga" data-filter="">
+                <div class="img">
+                    
+                </div>
+                <div class="text">
+                    <p class="name"> أليكس مورجان </p>
+                    <p class="profison"> مهندس إنشائي</p>
+                    <p class="description"> مهندس إنشائي خبير متخصص في تحليل المباني، حسابات الأحمال، وتصميم الحلول المستدامة</p>
+                    <button type="button" class="btn btn-primary"><a href="BookSeisson.html">حجز</a>  </button>
+                    <button type="button" class="btn btn-primary moreinfo" data-name="Alex Morgan"><a href="#">المزيد</a>  </button>
+                </div>
+            </div>
+            <div class="card shadow-sm" data-Category="Engineer" data-Specialty="Civil engineer" data-pname="Maria Lopezr" data-filter="">
+                <div class="img">
+                    
+                </div>
+                <div class="text">
+                    <p class="name"> ماريا لوبيز</p>
+                    <p class="profison"> مهندسة مدنية</p>
+                    <p class="description">مهندسة مدنية محترفة متخصصة في تطوير البنية التحتية، إنشاء الطرق، وإداره المشاريع.</p>
+                    <button type="button" class="btn btn-primary"><a href="BookSeisson.html">حجز</a>  </button>
+                    <button type="button" class="btn btn-primary moreinfo" data-name="Maria Lopeze"><a href="#">المزيد</a>  </button>
+                </div>
+            </div>
+            <div class="card shadow-sm" data-Category="doctor" data-Specialty="surgeon" data-pname="Emily Carter" data-filter="">
+                <div class="img">
+                    
+                </div>
+                <div class="text">
+                    <p class="name"> د. إيميلي كارتر</p>
+                    <p class="profison"> طبيبة جراحة</p>
+                    <p class="description">جراحة معتمدة بخبرة واسعة في العمليات طفيفة التوغل والرعاية الطبية </p>
+                    <button type="button" class="btn btn-primary"><a href="BookSeisson.html">حجز</a>  </button>
+                    <button type="button" class="btn btn-primary moreinfo" data-name="Emily Carter"><a href="#">المزيد</a>  </button>
+                </div>
+            </div>
+            <div class="card shadow-sm" data-Category="doctor" data-Specialty="Neurologist" data-pname="James Wilson" data-filter="">
+                <div class="img">
+                    
+                </div>
+                <div class="text">
+                    <p class="name"> د. جيمس ويلسون</p>
+                    <p class="profison"> طبيب أعصاب</p>
+                    <p class="description">طبيب أعصاب متخصص في تشخيص وعلاج الاضطرابات العصبية المعقدة، مع التركيز</p>
+                    <button type="button" class="btn btn-primary"><a href="BookSeisson.html">حجز</a>  </button>
+                    <button type="button" class="btn btn-primary moreinfo" data-name="James Wilson"><a href="#">المزيد</a>  </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="moreInfo m-one" data-iname="Sarah Chen">
+            <div class="context">
+                <i class="fa-solid fa-circle-xmark xmarker"></i>
+                <div class="container">
+                    <div class="header">
+                        <div class="leftcon">
+                            <div class="img">
+                            </div>
+                            <div class="text">
+                                <h2>الدكتورة سارة تشين</h2>
+                                <span>دكتوراه في الرياضيات | خبرة تدريس تزيد عن 10 سنوات <br> تدرّس: التفاضل والتكامل، الجبر، الهندسة | تقييم 4.9 نجوم (120 تقييمًا) </span>
+                            </div>
+                        </div>
+                        <div class="rightcon">
+                            <button type="button" class="btn btn-primary"><a href="BookSeisson.html">حجز</a>  </button>
+                        </div>
+                    </div>
+                    <div class="navm">
+                        <ul>
+                            <li>معلومات</li>
+                            <li>تقييم</li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <h2>معلومات</h2>
+                        <p>
+الدكتورة سارة تشين هي مُعلمة رياضيات خبيرة حاصلة على درجة الدكتوراه من جامعة ستانفورد. تتخصص في تبسيط المفاهيم الرياضية المعقدة وجعلها جذابة لجميع المستويات. فلسفتها التعليمية تركز على التعلم المخصص وتعزيز الفهم العميق للموضوع.</p>
+                    </div>
+                    <div class="reviews">
+                        <div class="leftr">
+                            <h4>4.9</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                            <span>120 تقييمًا  </span>
+                        </div>
+                        <div class="rightr">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moreInfo m-two" data-iname="David Lee">
+            <div class="context">
+                <i class="fa-solid fa-circle-xmark xmarker"></i>
+                <div class="container">
+                    <div class="header">
+                        <div class="leftcon">
+                            <div class="img">
+                            </div>
+                            <div class="text">
+                                <h2>ديفيد لي</h2>
+                                <span>أستاذ الكيمياء العضوية | 15+ سنة خبرة بحثية وتعليمية </span>
+                            </div>
+                        </div>
+                        <div class="rightcon">
+                            <button type="button" class="btn btn-primary"><a href="BookSeisson.html">حجز</a>  </button>
+                        </div>
+                    </div>
+                    <div class="navm">
+                        <ul>
+                            <li>معلومات</li>
+                            <li>تقييم</li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <h2>معلومات</h2>
+                        <p>الدكتورة سارة تشين هي مُعلمة رياضيات خبيرة حاصلة على درجة الدكتوراه من جامعة ستانفورد. تتخصص في تبسيط المفاهيم الرياضية المعقدة وجعلها جذابة لجميع المستويات. فلسفتها التعليمية تركز على التعلم المخصص وتعزيز الفهم العميق للموضوع.</p>
+                    </div>
+                    <div class="reviews">
+                        <div class="leftr">
+                            <h4>4.7</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                            <span>100 تقييمات</span>
+                        </div>
+                        <div class="rightr">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>@2025 EduConnect. All rights reserved.</p>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/find.js"></script>
+</body>
+</html>
